@@ -1,0 +1,22 @@
+.product_container {
+    line-height: 5px;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+#products_container {
+    height: 400px;
+    width: 1400px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
+    padding: 12px;
+    border: 3px solid black;
+    margin: 10px; 
+}
