@@ -1,0 +1,5 @@
+include: dołączany przypadek użycia jest wykonywany zawsze, a bez niego przypadek bazowy nie jest kompletny. Każde przyjęcie lub wydanie towaru musi zostać zapisane w historii operacji, a wydanie towaru zawsze sprawdza dostępną ilość.
+
+extend: rozszerzenie uruchamia się tylko w szczególnym przypadku. Logowanie kartą RFID jest alternatywnym sposobem logowania, a odrzucenie wydania następuje tylko wtedy, gdy brakuje towaru. Przypadek bazowy działa poprawnie także bez nich.
+
+Kierunek strzałek: przy include strzałka biegnie od przypadku bazowego do przypadku dołączanego, a przy extend od rozszerzenia do przypadku bazowego.
