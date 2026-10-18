@@ -1,47 +1,47 @@
-- Informacja o towarach na stanie:
-  - każdy towar ma swój kod EAN, nazwę, kategorię oraz miejsce przechowywania (sektor, regał, półka)
-  - możliwość wyszukiwania towarów po sektorze, nazwie i kodzie EAN
+Wymagania funkcjonalne:
 
-- Dostawy:
-  - możliwość odnotowania, jaki towar został przyjęty na magazyn i w jakiej ilości
-  - możliwość zapisywania przyjęć towarów
+1. WF-01 – Informacja o towarach na stanie: System umożliwia przechowywanie informacji o towarach, takich jak kod EAN, nazwa, kategoria oraz miejsce przechowywania (sektor, regał, półka).
 
-- Wydawanie towarów:
-  - możliwość odnotowywania wydań towarów z magazynu
-  - system nie pozwala wydać większej ilości towaru niż jest aktualnie dostępna na magazynie
+2. WF-02 – Wyszukiwanie towarów: System umożliwia wyszukiwanie towarów według sektora, nazwy oraz kodu EAN.
 
-- Logowanie i historia operacji:
-  - zapisywanie informacji o tym, kto przyjął lub wydał towar, jaki produkt był obsługiwany, w jakiej ilości i kiedy odbyła się operacja
+3. WF-03 – Rejestracja dostaw: System umożliwia rejestrowanie przyjęć towarów na magazyn, w tym identyfikatora produktu, ilości oraz daty przyjęcia.
 
-- Bezpieczeństwo:
-  - Konta użytkowników:
-    - ochrona prywatnych informacji przypisanych do konta
-    - haszowanie haseł użytkowników
-    - możliwość logowania za pomocą karty RFID
+4. WF-04 – Wydawanie towarów: System umożliwia rejestrowanie wydań towarów z magazynu, wraz z informacją o produkcie i wydanej ilości.
 
-- Kontrola dostępu:
-  - Kierownik magazynu:
-    - możliwość sprawdzania aktualnych stanów magazynowych
-    - możliwość dodawania nowych produktów
-    - dostęp do informacji i raportów magazynowych
-  - Administrator:
-    - zarządzanie kontami użytkowników i ich uprawnieniami
-    - możliwość zmiany hasła użytkownika i tworzenia nowych kont
+5. WF-05 – Walidacja stanów magazynowych: System blokuje możliwość wydania większej ilości towaru, niż jest aktualnie dostępna na magazynie.
 
-- Baza danych SQL:
-  - przechowywanie danych magazynowych w relacyjnej bazie danych SQL
+6. WF-06 – Historia operacji: System automatycznie zapisuje informacje o każdej operacji magazynowej, w tym dane pracownika, produkt, ilość oraz datę i godzinę wykonania operacji.
 
-- Optymalizacja:
-  - dbanie o sprawne i szybkie działanie systemu
+7. WF-07 – Logowanie użytkowników: System umożliwia logowanie użytkowników do indywidualnych kont oraz zapewnia ochronę prywatnych informacji przypisanych do konta.
 
-- Atomicity:
-  - operacje magazynowe powinny być wykonywane w całości albo nie powinny być zapisywane wcale
+8. WF-08 – Logowanie za pomocą karty RFID: System umożliwia użytkownikom logowanie się do systemu przy użyciu karty RFID.
 
-- Concurrency control:
-  - kontrolowanie jednoczesnych operacji wykonywanych przez kilku pracowników, aby uniknąć błędów w stanach magazynowych
+9. WF-09 – Kontrola dostępu: System umożliwia przydzielanie uprawnień użytkownikom w zależności od ich roli.
 
-- Prosty interfejs:
-  - interfejs powinien być czytelny i łatwy w obsłudze
+10. WF-10 – Uprawnienia kierownika magazynu: System umożliwia kierownikowi magazynu sprawdzanie aktualnych stanów magazynowych, dodawanie nowych produktów oraz przeglądanie informacji i raportów magazynowych.
 
-- Przyjęcia i wydania:
-  - obsługa podstawowych operacji związanych z przyjmowaniem i wydawaniem towarów z magazynu
+11. WF-11 – Zarządzanie kontami użytkowników: System umożliwia administratorowi zarządzanie kontami użytkowników i ich uprawnieniami, zmianę haseł oraz tworzenie nowych kont.
+
+12. WF-12 – Obsługa przyjęć i wydań: System obsługuje podstawowe operacje magazynowe związane z przyjmowaniem i wydawaniem towarów.
+
+Wymagania niefunkcjonalne:
+
+1. WNF-01 – Bezpieczeństwo haseł: System przechowuje hasła użytkowników w postaci skrótów kryptograficznych (hashy).
+
+2. WNF-02 – Baza danych SQL: System przechowuje dane magazynowe w relacyjnej bazie danych SQL.
+
+3. WNF-03 – Wydajność: System powinien działać sprawnie i szybko, zapewniając krótki czas odpowiedzi podczas wyszukiwania towarów i rejestrowania operacji.
+
+4. WNF-04 – Atomowość operacji: Operacje magazynowe muszą być wykonywane w całości albo nie mogą zostać zapisane w bazie danych.
+
+5. WNF-05 – Kontrola współbieżności: System musi kontrolować jednoczesne operacje wykonywane przez wielu pracowników, aby zapobiegać błędom w stanach magazynowych.
+
+6. WNF-06 – Użyteczność: Interfejs systemu powinien być prosty, czytelny i łatwy w obsłudze.
+
+Aktorzy:
+
+1. Pracownik magazynu: Odpowiada za obsługę towarów, wyszukiwanie produktów, rejestrowanie przyjęć dostaw oraz wydawanie towarów z magazynu.
+
+2. Kierownik magazynu: Odpowiada za nadzór nad gospodarką magazynową. Może sprawdzać aktualne stany magazynowe, dodawać nowe produkty oraz przeglądać raporty magazynowe.
+
+3. Administrator: Odpowiada za zarządzanie kontami użytkowników, przydzielanie uprawnień, zmianę haseł oraz tworzenie nowych kont.
