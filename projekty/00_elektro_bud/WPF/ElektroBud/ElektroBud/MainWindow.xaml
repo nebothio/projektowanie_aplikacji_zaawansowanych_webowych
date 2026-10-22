@@ -1,0 +1,60 @@
+﻿<Window x:Class="ElektroBud.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElektroBud"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock HorizontalAlignment="Center">Lista Towarow</TextBlock>
+            
+            <Border BorderBrush="Black" BorderThickness="2" Margin="0,5,0,5" Width="300">
+                <StackPanel Margin="3,0,0,0">
+                    <TextBlock>Nazwa: Produkt 1</TextBlock>
+                    <TextBlock>Miejsce przechowywania: sektor</TextBlock>
+                    <TextBlock>Kod EAN: 421123321123321</TextBlock>
+                    <TextBlock>Kategoria: 1</TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="2" Margin="0,5,0,5" Width="300">
+                <StackPanel Margin="3,0,0,0">
+                    <TextBlock>Nazwa: Produkt 2</TextBlock>
+                    <TextBlock>Miejsce przechowywania: regal</TextBlock>
+                    <TextBlock>Kod EAN:1231231231233</TextBlock>
+                    <TextBlock>Kategoria: 1</TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="2" Margin="0,5,0,5" Width="300">
+                <StackPanel Margin="3,0,0,0">
+                    <TextBlock>Nazwa: Produkt 3</TextBlock>
+                    <TextBlock>Miejsce przechowywania: polka</TextBlock>
+                    <TextBlock>Kod EAN: 2343223443232</TextBlock>
+                    <TextBlock>Kategoria: 3</TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="2" Margin="0,5,0,5" Width="300">
+                <StackPanel Margin="3,0,0,0">
+                    <TextBlock>Nazwa: Produkt 4</TextBlock>
+                    <TextBlock>Miejsce przechowywania: regal</TextBlock>
+                    <TextBlock>Kod EAN: 432234432234432</TextBlock>
+                    <TextBlock>Kategoria: 2</TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="2" Margin="0,5,0,5" Width="300">
+                <StackPanel Margin="3,0,0,0">
+                    <TextBlock>Nazwa: Produkt 5</TextBlock>
+                    <TextBlock>Miejsce przechowywania: sektor</TextBlock>
+                    <TextBlock>Kod EAN: 1233213211232</TextBlock>
+                    <TextBlock>Kategoria: 3</TextBlock>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </Grid>
+</Window>

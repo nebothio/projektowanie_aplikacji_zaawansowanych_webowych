@@ -1,0 +1,15 @@
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\bin\Debug\ElektroBud.exe.config
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\bin\Debug\ElektroBud.exe
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\bin\Debug\ElektroBud.pdb
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\MainWindow.g.cs
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\App.g.cs
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud_MarkupCompile.cache
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud_MarkupCompile.lref
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\MainWindow.baml
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.g.resources
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.Properties.Resources.resources
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.exe
+C:\Users\acer\source\repos\ElektroBud\ElektroBud\obj\Debug\ElektroBud.pdb
